@@ -5,6 +5,7 @@ const todoList = document.querySelector('.todo-list');
 
 //event listener
 todoButton.addEventListener('click' , addTodo);
+todoList.addEventListener('click' , deleteCheck);
 
 
 
@@ -15,7 +16,8 @@ const  todoDiv = document.createElement('div');
 todoDiv.classList.add("todo");
 
 const newTodo = document.createElement('li');
-newTodo.innerText = todoInput.value;
+newTodo.innerText = todoInput.value ;
+if(todoInput.value !== ""){
 newTodo.classList.add('todo-item');
 todoDiv.appendChild(newTodo);
 //check mark button
@@ -31,5 +33,14 @@ todoDiv.appendChild(trashButton);
 
 todoList.appendChild(todoDiv);
 //clear input value
-todoInput.value = "";
+todoInput.value = ""; }
+}
+
+function deleteCheck(e){
+const item = e.target;
+//delete todo
+if(item.classList[0] == 'trash-btn'){
+    const todo = item.parentElement;
+    todo.remove();
+}
 }
