@@ -15,7 +15,7 @@ const  todoDiv = document.createElement('div');
 todoDiv.classList.add("todo");
 
 const newTodo = document.createElement('li');
-newTodo.innerText = 'hey';
+newTodo.innerText = todoInput.value;
 newTodo.classList.add('todo-item');
 todoDiv.appendChild(newTodo);
 //check mark button
@@ -30,4 +30,6 @@ trashButton.classList.add("trash-btn");
 todoDiv.appendChild(trashButton);
 
 todoList.appendChild(todoDiv);
+//clear input value
+todoInput.value = "";
 }

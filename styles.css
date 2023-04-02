@@ -24,19 +24,23 @@ header, form {
     align-items: center;
 }
 
+
 form input , form button{
     margin-top: 10px;
     padding: 0.5rem;
     font-size: 2rem;
     border: none;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
-    border-radius: 4px;
+}
+form input{
+    width: 50%;
+    font-size: 1.8rem;
 }
 
 form button{
     background-color: rgb(255, 255, 255);
     display: flex;
-    margin-left: -49px;
+    height: 3.1rem;
     cursor: pointer;
     transition: all 0.3 ease;
    }
@@ -82,7 +86,7 @@ form button{
     color: white;
     background-color: rgb(237, 63, 63);
    border: none;
-  
+   transition: all 0.3 ease;
     padding: 1rem ;
     cursor: pointer;
     font-size: 1rem;
@@ -95,10 +99,15 @@ form button{
     padding: 1rem ;
     cursor: pointer;
     font-size: 1rem;
-
+    transition: all 0.3 ease;
 }
 
 .trash-btn , .complete-btn::hover {
     opacity: 85%;
 
+}
+
+.todo-item{
+    padding: 0rem 0.6rem;
+   
 }
