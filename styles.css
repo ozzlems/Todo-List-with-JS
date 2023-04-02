@@ -45,3 +45,60 @@ form button{
     background-image:  linear-gradient(135deg, #f0a754 , #f29c6e , #ecb180); 
    
   }
+
+  .todo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .todo-list{
+    min-width: 40%;
+    list-style: none;
+    
+
+  }
+
+  .todo{
+    margin: 1rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1px;
+  }
+
+  .todo li{
+    flex: 1 1 0%;
+    
+}
+
+
+
+.trash-btn{
+    color: white;
+    background-color: rgb(237, 63, 63);
+   border: none;
+  
+    padding: 1rem ;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-btn{
+    color: white;
+    background-color: rgb(75, 192, 73);
+   border: none;
+    padding: 1rem ;
+    cursor: pointer;
+    font-size: 1rem;
+
+}
+
+.trash-btn , .complete-btn::hover {
+    opacity: 85%;
+
+}
