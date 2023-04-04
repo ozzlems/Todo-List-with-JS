@@ -70,6 +70,7 @@ todos.forEach(function(todo){
                 else{
                     todo.style.display = "none";
                 }
+                break;
             case "uncompleted":
                 if(!todo.classList.contains('completed')){
                     todo.style.display = "flex";
@@ -77,6 +78,7 @@ todos.forEach(function(todo){
                 else{
                     todo.style.display = "none";
                 }
+                break;
 
     }
 })
