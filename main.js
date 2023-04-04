@@ -21,6 +21,7 @@ newTodo.innerText = todoInput.value ;
 if(todoInput.value !== ""){
 newTodo.classList.add('todo-item');
 todoDiv.appendChild(newTodo);
+saveLocalTodos(todoInput.value);
 //check mark button
 const completedButton = document.createElement('button');
 completedButton.innerHTML = '<i class = "fas fa-check"></i>'
