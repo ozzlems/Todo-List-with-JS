@@ -14,9 +14,27 @@ background-image: linear-gradient(135deg, #ee9f43 , #fe9962 , #f9ad6f);
 
 header{
  font-size: 1.5rem;
+ text-shadow: 3px 4px 8px #dd913a,
+ 0px 4px 5px rgba(240, 140, 0, 0.726);
+ letter-spacing: 1.1px;
+ margin-right: 5px;
 
 }
+h2{
+    display: flex;
+    text-align: left;
+   justify-content: left;
+    flex: 1 ;
+    margin-left: 18%;
+    font-size: 25px;
+    color: #ffffff;
+    word-spacing: 2px;
+    letter-spacing: 1.2px;
+    text-shadow: 3px 4px 3px #ee9f43;
+    opacity: 99%;
+    padding-bottom: 25px;
 
+}
 header, form {
     min-height:20vh;
     display: flex;
