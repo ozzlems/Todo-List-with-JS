@@ -13,4 +13,4 @@ This is an useful and fully functional todo list prepared using html css and jav
 <br><br>
 
 <h2>Notes</h2>
-A todo list website should have a simple design, like minimal colors and easy-to-read fonts. It should be simple and easy to navigate. 
+A todo list website should have a simple design, like minimal colors and easy-to-read fonts. Design should be clear and consistent. 
